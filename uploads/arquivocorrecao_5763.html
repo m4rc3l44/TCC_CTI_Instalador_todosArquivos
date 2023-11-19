@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e11018516c2c050dd62c96a9bd721f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5e11018516c2c050dd62c96a9bd721f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5e11018516c2c050dd62c96a9bd721f9 = L.map(
+                "map_5e11018516c2c050dd62c96a9bd721f9",
+                {
+                    center: [-22.343930950000004, -49.01653893],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 30,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db1bc0d29e507edf051f1eb49679f244 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+            var circle_marker_23e955b63439ef21f35e4a25877cab34 = L.circleMarker(
+                [-22.3429438, -49.016841],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_d58631c26584b8678cfdcdc0d5ebf6bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72533b04fb06b3443446af4eaeb6108f = $(`<div id="html_72533b04fb06b3443446af4eaeb6108f" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="/botanico.png" width='100' heigth=auto>             <h5><center>Essa é a entrada do Jardim Botânico Municipal de Bauru</center><h5>         </body>          </html>     </div>`)[0];
+                popup_d58631c26584b8678cfdcdc0d5ebf6bd.setContent(html_72533b04fb06b3443446af4eaeb6108f);
+            
+        
+
+        circle_marker_23e955b63439ef21f35e4a25877cab34.bindPopup(popup_d58631c26584b8678cfdcdc0d5ebf6bd)
+        ;
+
+        
+    
+    
+            circle_marker_23e955b63439ef21f35e4a25877cab34.bindTooltip(
+                `<div>
+                     <b>Entrada<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9db3571e48b17ad9c35a912b8a9af652 = L.circleMarker(
+                [-22.343353, -49.016723],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_e17702cce001d1d3eb7fb694aea09ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c9bf56f2c48a0651d4352894d965fd6 = $(`<div id="html_4c9bf56f2c48a0651d4352894d965fd6" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Essa é a arvore</center><h5>         </body>          </html>     </div>`)[0];
+                popup_e17702cce001d1d3eb7fb694aea09ee4.setContent(html_4c9bf56f2c48a0651d4352894d965fd6);
+            
+        
+
+        circle_marker_9db3571e48b17ad9c35a912b8a9af652.bindPopup(popup_e17702cce001d1d3eb7fb694aea09ee4)
+        ;
+
+        
+    
+    
+            circle_marker_9db3571e48b17ad9c35a912b8a9af652.bindTooltip(
+                `<div>
+                     <b>Copaíba<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_53dbfd05b882c15bc10617c35dc0b6ee = L.circleMarker(
+                [-22.3440393, -49.0165199],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_47930ef29651e7f9ce9e0d499c6bc704 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac7658bde71268f882bcc8a8c3d81e27 = $(`<div id="html_ac7658bde71268f882bcc8a8c3d81e27" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Aqui se faz apresentações</center><h5>         </body>          </html>     </div>`)[0];
+                popup_47930ef29651e7f9ce9e0d499c6bc704.setContent(html_ac7658bde71268f882bcc8a8c3d81e27);
+            
+        
+
+        circle_marker_53dbfd05b882c15bc10617c35dc0b6ee.bindPopup(popup_47930ef29651e7f9ce9e0d499c6bc704)
+        ;
+
+        
+    
+    
+            circle_marker_53dbfd05b882c15bc10617c35dc0b6ee.bindTooltip(
+                `<div>
+                     <b>Auditório<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22a405f82e93a8459826d09f65ecb7d4 = L.circleMarker(
+                [-22.3436881, -49.0165188],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_6cbc1a7ac3aaa6faa2fd29d74223670a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35a1b28a92f93b34e77fc1faa3b85a53 = $(`<div id="html_35a1b28a92f93b34e77fc1faa3b85a53" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Aqui vc acessa o caminho ao mirante</center><h5>         </body>          </html>     </div>`)[0];
+                popup_6cbc1a7ac3aaa6faa2fd29d74223670a.setContent(html_35a1b28a92f93b34e77fc1faa3b85a53);
+            
+        
+
+        circle_marker_22a405f82e93a8459826d09f65ecb7d4.bindPopup(popup_6cbc1a7ac3aaa6faa2fd29d74223670a)
+        ;
+
+        
+    
+    
+            circle_marker_22a405f82e93a8459826d09f65ecb7d4.bindTooltip(
+                `<div>
+                     <b>Acesso ao mirante<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ddfdeb1a09058c0f9267e50bd8c17860 = L.circleMarker(
+                [-22.3440271, -49.0160728],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_bf497d49a67b0f2e3fca0e9bf6f40edf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72e6710cb0499a58bb11df516a913b5e = $(`<div id="html_72e6710cb0499a58bb11df516a913b5e" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Aqui você pode encontrar algumas abelhas</center><h5>         </body>          </html>     </div>`)[0];
+                popup_bf497d49a67b0f2e3fca0e9bf6f40edf.setContent(html_72e6710cb0499a58bb11df516a913b5e);
+            
+        
+
+        circle_marker_ddfdeb1a09058c0f9267e50bd8c17860.bindPopup(popup_bf497d49a67b0f2e3fca0e9bf6f40edf)
+        ;
+
+        
+    
+    
+            circle_marker_ddfdeb1a09058c0f9267e50bd8c17860.bindTooltip(
+                `<div>
+                     <b>Tipos de abelhas<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5a295d66cbd09443a2429f86e048565 = L.circleMarker(
+                [-22.343795, -49.0164282],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_20a835732e70b3ea8630f90e7bf067eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_522f11f767f1911855a4c0b523473c37 = $(`<div id="html_522f11f767f1911855a4c0b523473c37" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center><em>Gochnatia polymorpha</em></center><h5>         </body>          </html>     </div>`)[0];
+                popup_20a835732e70b3ea8630f90e7bf067eb.setContent(html_522f11f767f1911855a4c0b523473c37);
+            
+        
+
+        circle_marker_b5a295d66cbd09443a2429f86e048565.bindPopup(popup_20a835732e70b3ea8630f90e7bf067eb)
+        ;
+
+        
+    
+    
+            circle_marker_b5a295d66cbd09443a2429f86e048565.bindTooltip(
+                `<div>
+                     <b>Cambará<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f10cedf9afa89b0cfeea113be30927b0 = L.circleMarker(
+                [-22.3454173, -49.0165468],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_9ec0730d9ab2015b4f35a2f4e9de9eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89d0b2667196a46b9a5af9199b6e679b = $(`<div id="html_89d0b2667196a46b9a5af9199b6e679b" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Aqui encontramos um mirante em que se pode ver a vegetação</center><h5>         </body>          </html>     </div>`)[0];
+                popup_9ec0730d9ab2015b4f35a2f4e9de9eb8.setContent(html_89d0b2667196a46b9a5af9199b6e679b);
+            
+        
+
+        circle_marker_f10cedf9afa89b0cfeea113be30927b0.bindPopup(popup_9ec0730d9ab2015b4f35a2f4e9de9eb8)
+        ;
+
+        
+    
+    
+            circle_marker_f10cedf9afa89b0cfeea113be30927b0.bindTooltip(
+                `<div>
+                     <b>Mirante<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74a31f5598382b8b9f185c7c893c8120 = L.circleMarker(
+                [-22.3444058, -49.0160099],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_ebeb16e29563ddd36472ae429a928a4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c650fe73ea74aa273329ed60d3a3603 = $(`<div id="html_4c650fe73ea74aa273329ed60d3a3603" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center><em>Copaifera langsdorffii</em></center><h5>         </body>          </html>     </div>`)[0];
+                popup_ebeb16e29563ddd36472ae429a928a4a.setContent(html_4c650fe73ea74aa273329ed60d3a3603);
+            
+        
+
+        circle_marker_74a31f5598382b8b9f185c7c893c8120.bindPopup(popup_ebeb16e29563ddd36472ae429a928a4a)
+        ;
+
+        
+    
+    
+            circle_marker_74a31f5598382b8b9f185c7c893c8120.bindTooltip(
+                `<div>
+                     <b>Copaíba(outra)<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_121e31e1598882fa4fa80adfd9abfe62 = L.circleMarker(
+                [-22.3435406, -49.0168722],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_0be7f20108f32b388da1f38f9331fe04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adc7b9c4c4b031e0a3f18c65d021fdaf = $(`<div id="html_adc7b9c4c4b031e0a3f18c65d021fdaf" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Aqui encontra-se plantas medicinais</center><h5>         </body>          </html>     </div>`)[0];
+                popup_0be7f20108f32b388da1f38f9331fe04.setContent(html_adc7b9c4c4b031e0a3f18c65d021fdaf);
+            
+        
+
+        circle_marker_121e31e1598882fa4fa80adfd9abfe62.bindPopup(popup_0be7f20108f32b388da1f38f9331fe04)
+        ;
+
+        
+    
+    
+            circle_marker_121e31e1598882fa4fa80adfd9abfe62.bindTooltip(
+                `<div>
+                     <b>Jardim Medicinal Sensorial<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09d1ec3951e6ae243f8bd2502c485209 = L.circleMarker(
+                [-22.3440995, -49.0168567],
+                {"bubblingMouseEvents": true, "color": "Blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "Blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_5e11018516c2c050dd62c96a9bd721f9);
+        
+    
+        var popup_eeb999a364e40ec28a1fed3f74eb0abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06968fd11947062b605b803d0bafd079 = $(`<div id="html_06968fd11947062b605b803d0bafd079" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html lang="en">          <head>             <meta charset="UTF-8">             <meta http-equiv="X-UA-Compatible" content="IE=edge">             <meta name="viewport" content="width=device-width, initial-scale=1.0">             <title>Document</title>         </head>          <body>             <img src="" width='100' heigth=auto>             <h5><center>Muitas ptedridófitas</center><h5>         </body>          </html>     </div>`)[0];
+                popup_eeb999a364e40ec28a1fed3f74eb0abf.setContent(html_06968fd11947062b605b803d0bafd079);
+            
+        
+
+        circle_marker_09d1ec3951e6ae243f8bd2502c485209.bindPopup(popup_eeb999a364e40ec28a1fed3f74eb0abf)
+        ;
+
+        
+    
+    
+            circle_marker_09d1ec3951e6ae243f8bd2502c485209.bindTooltip(
+                `<div>
+                     <b>Estufa<b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

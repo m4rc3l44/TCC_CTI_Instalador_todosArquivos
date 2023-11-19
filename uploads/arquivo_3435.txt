@@ -1,0 +1,108 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class RespostaExercicio extends Model
+{
+    use HasFactory;
+
+
+    protected $table='resposta_exercicios';
+
+    protected $primaryKey=['fk_id_exercicio','letra_respondida'];
+
+    public $incrementing = false;
+
+    protected $fillable = [
+        'fk_id_exercicio', 
+        'fk_nome_materia',
+        'fk_nome_assunto',
+        'letra_respondida',
+        'fk_letra_certa'
+    ];
+
+
+
+    public function assunto()
+    {
+        return $this->belongsTo(Assunto::class, 'nome_assunto', 'fk_nome_assunto');
+    }
+
+    public function materia()
+    {
+        return $this->belongsTo(Materia::class, 'nome_materia', 'fk_nome_materia');
+    }
+
+    public function exercicio()
+    {
+        return $this->belongsTo(Exercicio::class, 'id_exercicio', 'fk_id_exercicio');
+    }
+
+    public function alternativa()
+    {
+        return $this->belongsTo(Alternativa::class, 'letra', 'fk_letra_certa');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('resposta_exercicios', function (Blueprint $table) {
+           $table->integer('fk_id_exercicio');
+           $table->primary(['fk_id_exercicio','letra_respondida']);
+           $table->foreign('fk_id_exercicio')->references('id_exercicio')->on('exercicios');
+           $table->string('fk_nome_materia');
+           $table->foreign('fk_nome_materia')->references('nome_materia')->on('materias');
+           $table->string('fk_nome_assunto');
+           $table->foreign('fk_nome_assunto')->references('nome_assunto')->on('assuntos');
+           $table->string('letra_respondida');
+           $table->string('fk_letra_certa');
+           $table->foreign('fk_letra_certa')->references('letra')->on('alternativas');
+           $table->timestamps(); 
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('resposta_exercicios');
+    }
+};
+
+
+
+
+

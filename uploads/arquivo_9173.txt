@@ -1,0 +1,19 @@
+slide 1 - apresentacao geral do projeto
+slide 2 - apresentacao da equipe 
+slide 3 - apresentacao da instituicao parceira 
+slide 4 a 13 - ficha tecnica / tap 
+slide 14 - justificativa 
+slide 15 e 16 - apresentacao do projeto (objetivos)
+slide 17 - problemas 
+slide 18 a 20 - cronograma 
+slide 21 e 22 - ciclo de vida do projeto 
+slide 23 a 25 - eap
+slide 26 - diagrama de contexto 
+slide 27 a 29 - diagrama de fluxo de dados 
+slide 30 - diagrama conceitual 
+slide 31 - diagrama logico 
+slide 32 e 33 - softwares usados 
+slide 34 - apresentacao do sistema - mostrar site funcionando e suas telas 
+slide 36 e 37 - w52h
+slide 38 - custos finais 
+slide 39 - finalizacao 

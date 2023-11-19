@@ -1,0 +1,68 @@
+
+
+Assunto
+
+  // public function update(Request $request, $nome_assunto) ///////////////NOVOOOOOOO
+    // {
+  
+    //     $assuntoAntigo = Assunto::find($nome_assunto);
+    //     $assuntoAntigo->update($request->all());
+    //     return redirect()->route('assunto.list');
+    // }
+
+Aula
+
+// public function update(Request $request, $nome_aula) ///////////////NOVOOOOOOO
+    // {
+    //     $aulaAntiga = Aula::find($nome_aula);
+    //     $aulaAntiga->update($request->all());
+    //     return redirect()->route('aula.list');
+    // }
+
+Exercício
+
+// public function update(Request $request, $id_exercicio) ///////////////NOVOOOOOOO
+    // {
+    //     $exercicio = Exercicio::find($id_exercicio);
+    //     $exercicio->update($request->all());
+    //     return redirect()->route('exercicio.list');
+    // }
+
+Matéria
+
+// public function update(Request $request, $nome_materia) ///////////////NOVOOOOOOO
+    // {
+    //     $materia = Materia::find($nome_materia);
+    //     $materia->update($request->all());
+    //     return redirect()->route('materia.list');
+    // }
+
+Redacao
+
+// public function update(Request $request, $titulo) ///////////////NOVOOOOOOO
+    // {
+    //    $redacaoAntigo = Redacao::where('titulo', $titulo)->first();
+    //     $redacaoAntigo->update($request->all());
+    //     return redirect()->route('redacao.list');
+    // }
+
+update_redacao_enviada
+
+// public function update_redacao_enviada(Request $request, $id_redacao) ///////////////NOVOOOOOOO
+    // {
+    //    $redacao = RedacaoAluno::find($id_redacao);
+    //     $redacao->update($request->all());
+       // return redirect()->route('redacao.list_aluno_para_aluno', ['cpf' => $req->fk_cpf_aluno]);
+
+    // }
+
+RedacaoCorrigida 
+
+// public function update(Request $request, $id_redacao_corrigida) ///////////////NOVOOOOOOO
+    // {
+    //    $redacao = RedacaoCorrigida::find($id_redacao_corrigida);
+    //     $redacao->update($request->all());
+    //            return redirect()->route('redacao_corrigida.list');
+
+
+    // }
